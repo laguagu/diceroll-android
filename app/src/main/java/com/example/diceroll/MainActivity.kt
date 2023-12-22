@@ -1,22 +1,35 @@
 package com.example.diceroll
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
 import android.widget.ImageView
+import com.example.diceroll.databinding.ActivityMainBinding
 import java.util.Random
 
 class MainActivity : AppCompatActivity() {
 
-    lateinit var diceImage: ImageView
+    private lateinit var binding: ActivityMainBinding
+    private lateinit var diceImage: ImageView
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
-        val rollButton: Button = findViewById(R.id.roll_button)
+        binding = ActivityMainBinding.inflate(layoutInflater)
+        setContentView(binding.root)
+
+        val rollButton: Button = binding.rollButton
         rollButton.setOnClickListener {
             rollDice()
         }
-        diceImage = findViewById(R.id.dice_image)
+
+        diceImage = binding.diceImage
+
+        val calculatorButton: Button = binding.calculatorButton
+        calculatorButton.setOnClickListener {
+            val intent = Intent(this, CalculatorActivity::class.java)
+            startActivity(intent)
+        }
 
     }
 

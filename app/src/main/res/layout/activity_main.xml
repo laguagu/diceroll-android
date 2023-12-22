@@ -22,5 +22,12 @@
             android:layout_gravity="center_horizontal"
             android:text="@string/roll"
     />
+    <Button
+            android:id="@+id/calculator_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="@string/open_calculator"
+    />
 
 </LinearLayout>

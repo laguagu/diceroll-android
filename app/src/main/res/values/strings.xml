@@ -2,4 +2,6 @@
     <string name="app_name">Diceroll</string>
     <string name="roll">Roll</string>
     <string name="open_calculator">Open Calculator</string>
+    <string name="dice">dice</string>
+    <string name="calculator">Calculator</string>
 </resources>

@@ -8,15 +8,14 @@
         tools:context=".CalculatorActivity"
         android:orientation="vertical"
         android:gravity="center">
->
+    >
 
 
     <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Calculator"
+            android:text="@string/calculator"
             android:textSize="40sp"
-
     />
 
 </LinearLayout>
